@@ -1,0 +1,15 @@
+.estrelas input[type=radio]{
+  display: none;
+ 
+  
+}.estrelas label i.fa:before{ /*AS mudanças de tamanho serao feitas aqui*/
+  content: '\f005';
+  color: #FC0;
+  margin: 1px;
+ font-size:30px;
+
+
+ }.estrelas  input[type=radio]:checked  ~ label i.fa:before{
+  color: #CCC;
+
+} 

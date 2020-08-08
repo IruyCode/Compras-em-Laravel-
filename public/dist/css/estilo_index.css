@@ -1,0 +1,108 @@
+.verd {      /* Colocar na barra buscar do index produtos a verde */
+  border: 1px solid #ccc;
+  outline: none;
+  border-color: green;
+}
+.verd:focus{ 
+  border-color: green; 
+  -webkit-box-shadow: none; 
+  box-shadow: none; 
+}
+
+select {
+  color: gray;
+  transition: color 0s 2147483647s; /*Gambiarra para deixar o select ao estado de verde após escolher*/ 
+}
+
+select:hover,
+select:focus,
+select:active,
+select:focus {
+  color: green;
+  transition:0s;
+}
+
+select option {
+  color: green;
+}
+
+option[value=""][disabled] {
+  display: none;
+}
+/*parte de baixo do site o Rodape*/
+   footer{
+
+           bottom: 0px;
+            width: 100%;
+        }
+      
+  
+         @media only screen and (min-width: 770px) {
+       footer{
+        
+           clear: both;
+           width: 100%;
+          
+       }
+       .logotipo{
+           font-size: 1em;
+           width: 35%;
+           float: left;
+           text-align: center;
+       }
+       .logotipo img, .redes img{
+           width: 26%;
+       }
+       .redes{
+           width: 35%;
+           float: right ;
+           margin-left: 2%;
+           text-align: center;
+       }
+       p {
+           
+           font-size: 18px;
+           margin-top: 6px;
+          
+       }
+
+     }
+      .galeria{
+  
+    margin-top: 30px;
+   margin-right: : 400px;
+    width: 880px;
+    height: 470px;
+   
+    overflow: hidden;
+}
+.foto{
+    
+    opacity:;
+    animation-name:animacao;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    width:500px;
+    height: 500px;
+    }
+    @keyframes animacao {
+        25%{
+            opacity: 1;
+            transform: scale(1.1,1.1);
+        }
+        50%{
+            opacity: 0;
+        }
+    }
+    .foto:nth-child(1){
+
+    }
+    .foto:nth-child(2){
+        animation-delay: 5s;
+    }
+    .foto:nth-child(3){
+        animation-delay: 10s;
+    }
+    .foto:nth-child(4){
+        animation-delay: 15s;
+    }
